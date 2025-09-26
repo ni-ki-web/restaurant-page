@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #555;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+header {
+  background-color: #f78fb3;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color:#fff;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav button {
+  position: relative;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+nav button:hover {
+  border: 1px solid #fff;
+}
+
+nav button.active {
+  background: #ffff;
+  color: #f78fb3;
+}
+
+#content {
+  flex: 1;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+footer {
+  background-color: #fce4ec;
+  color: #6d4c41;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #f78fb3;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.home-container {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #6d4c41;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.text h1 {
+  text-align: left;
+}
+
+.text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.text {
+  flex: 1 1 350px;
+}
+
+.image {
+  flex: 1 1 500px;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #fce4ec;
+  border: 2px dashed #f78fb3;
+  color: #6d4c41; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+  }
+}
+
+.menu-card {
+  background: #fff;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #f3d6e2;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2 ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(247, 143, 179, 0.25);
+}
+
+.menu-card img, 
+.menu-card .img-placeholder {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.menu-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #f78fb3;
+}
+
+.menu-card p {
+  font-size: 0.95rem;
+}
+
+.contact {
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contact .img-placeholder {
+  margin: 1rem auto 2rem;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #f78fb3;
+}
+
+.contact-card {
+  background-color: #fff;
+  border: 1px solid #f3d6e2;
+  border-left: 0.5rem solid #f78fb3;
+  box-shadow: 0 2px 6px rgba(2247, 143, 179, 0.25);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contact-card p, .contact-card li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-card .hours {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.contact-card p:last-child {
+  font-style: italic;
+}
+
+.closing-line {
+  background: #fce4ec;
+  color: #f78fb3;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(247, 143, 179, 0.3);
+}
+
+@media (max-width: 768px) {
+  #content {
+    margin-top: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  nav {
+    gap: 0.3rem;
+  }
+
+  nav button {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
