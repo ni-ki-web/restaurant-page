@@ -18,7 +18,7 @@ Built with:
 ## Live Demo
 
 Check out the live site here:
-![Live Demo](https://ni-ki-web.github.io/restaurant-page/)
+[Live Demo](https://ni-ki-web.github.io/restaurant-page/)
 
 
 ## Screenshots
