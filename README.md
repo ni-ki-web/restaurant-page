@@ -13,3 +13,18 @@ Built with:
 - Image placeholders for menu items and café visuals
 - Contact page with location, hours, and styled info cards
 - Sweet pink-and-cream color theme
+
+
+## Live Demo
+
+Check out the live site here:
+![Live Demo](https://ni-ki-web.github.io/restaurant-page/)
+
+
+## Screenshots
+- **Home Page**  
+![Home Page](project-screenshots/homepage-laptop.png)  
+![Home Page - Small Screen](project-screenshots/homepage-small.png)  
+
+- **Menu Page**  
+![Menu Page](./project-screenshots/menupage-small.png)  
